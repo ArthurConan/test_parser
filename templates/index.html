@@ -1,1 +1,32 @@
+<!doctype html>
+<html lang="en">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Result records</title>
+    </head>
+
+    <body>
+        <table>
+            <tr> <td> <h1>FOBNET</h1> </td></tr>
+            <tr> <td> <a>Results (sorted by section)</a> </td></tr>
+        {% for item in result %}
+            <tr> <td> {{ item.get('section') }} </td></tr>
+            {% if item.get('event') %}
+                {% for el in item.get('event') %}
+                <tr>
+                    <td>{{ el.get('id') }}</td>
+                    <td>{{ el.get('name') }}</td>
+                    <td>{{ el.get('score') }}</td>
+                    <td>{{ el.get('startTime') }}</td>
+                    <td>{{ el.get('status') }}</td>
+                    <td>{{ el.get('comment3') }}</td>
+                </tr>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+        </table>
+    </body>
+</html>
