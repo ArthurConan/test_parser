@@ -1,0 +1,8 @@
+aiohttp==3.6.2
+aiohttp-jinja2==1.2.0
+aiohttp-session==2.9.0
+aiojobs==0.2.2
+aioredis==1.2.0
+beautifulsoup4==4.8.2
+devtools==0.5
+Jinja2==2.10.3
