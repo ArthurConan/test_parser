@@ -1,4 +1,7 @@
 # test_parser
-run:
-docker-compose build
-docker-compose up
+## Follow:
+run in project folder:  
+**docker-compose build**  
+**docker-compose up**  
+check url  
+**host:port**/*{letter}*
