@@ -5,4 +5,4 @@ aiojobs==0.2.2
 aioredis==1.2.0
 beautifulsoup4==4.8.2
 devtools==0.5
-Jinja2==2.10.3
+Jinja2==2.11.3
